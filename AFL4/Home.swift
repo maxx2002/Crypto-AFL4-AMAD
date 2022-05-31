@@ -12,6 +12,13 @@ struct Home: View {
         VStack(alignment: .leading) {
             Text("John Doe")
             Text("Welcome back").foregroundColor(.gray)
+            
+            NavigationView{
+                List {
+                    
+                }
+                .navigationTitle("My Favorite Crypto")
+            }
         }
     }
 }
