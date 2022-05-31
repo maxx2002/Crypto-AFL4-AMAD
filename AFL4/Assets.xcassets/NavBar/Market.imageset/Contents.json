@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "market.png",
+      "filename" : "Default.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "market2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -13,14 +13,17 @@ struct ContentView: View {
             Home()
                 .tabItem() {
                     Image("Home")
+                    Text("Home")
                 }
             Market()
                 .tabItem() {
                     Image("Market")
+                    Text("Market")
                 }
             Wishlist()
                 .tabItem() {
                     Image("Wishlist")
+                    Text("Wishlist")
                 }
         }
     }
