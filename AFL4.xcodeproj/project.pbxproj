@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0464A4032845204700618E21 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464A4022845204700618E21 /* Home.swift */; };
+		0464A405284523C600618E21 /* CryptoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464A404284523C600618E21 /* CryptoRow.swift */; };
 		04DE78B4283C6B3B0077BEE3 /* AFL4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */; };
 		04DE78B6283C6B3B0077BEE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE78B5283C6B3B0077BEE3 /* ContentView.swift */; };
 		04DE78B8283C6B3C0077BEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DE78B7283C6B3C0077BEE3 /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0464A4022845204700618E21 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0464A404284523C600618E21 /* CryptoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRow.swift; sourceTree = "<group>"; };
 		04DE78B0283C6B3B0077BEE3 /* AFL4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFL4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL4App.swift; sourceTree = "<group>"; };
 		04DE78B5283C6B3B0077BEE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +75,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0464A4012845201C00618E21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0464A4022845204700618E21 /* Home.swift */,
+				0464A404284523C600618E21 /* CryptoRow.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		04DE78A7283C6B3A0077BEE3 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +107,7 @@
 		04DE78B2283C6B3B0077BEE3 /* AFL4 */ = {
 			isa = PBXGroup;
 			children = (
+				0464A4012845201C00618E21 /* Views */,
 				04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */,
 				04DE78B5283C6B3B0077BEE3 /* ContentView.swift */,
 				04DE78B7283C6B3C0077BEE3 /* Assets.xcassets */,
@@ -258,7 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DE78B6283C6B3B0077BEE3 /* ContentView.swift in Sources */,
+				0464A4032845204700618E21 /* Home.swift in Sources */,
 				04DE78B4283C6B3B0077BEE3 /* AFL4App.swift in Sources */,
+				0464A405284523C600618E21 /* CryptoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
