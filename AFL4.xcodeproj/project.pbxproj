@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		042AA09F28474721005C9A2F /* MyFavoriteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AA09E28474721005C9A2F /* MyFavoriteCard.swift */; };
+		042AA0A228475420005C9A2F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AA0A128475420005C9A2F /* ViewModel.swift */; };
 		0464A4032845204700618E21 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464A4022845204700618E21 /* Home.swift */; };
 		0464A405284523C600618E21 /* CryptoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464A404284523C600618E21 /* CryptoRow.swift */; };
 		04DE78B4283C6B3B0077BEE3 /* AFL4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		042AA09E28474721005C9A2F /* MyFavoriteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteCard.swift; sourceTree = "<group>"; };
+		042AA0A128475420005C9A2F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0464A4022845204700618E21 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		0464A404284523C600618E21 /* CryptoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRow.swift; sourceTree = "<group>"; };
 		04DE78B0283C6B3B0077BEE3 /* AFL4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFL4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042AA0A028475401005C9A2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042AA0A128475420005C9A2F /* ViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0464A4012845201C00618E21 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +126,7 @@
 		04DE78B2283C6B3B0077BEE3 /* AFL4 */ = {
 			isa = PBXGroup;
 			children = (
+				042AA0A028475401005C9A2F /* Model */,
 				0464A4012845201C00618E21 /* Views */,
 				04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */,
 				04DE78B5283C6B3B0077BEE3 /* ContentView.swift */,
@@ -286,6 +297,7 @@
 				042AA09F28474721005C9A2F /* MyFavoriteCard.swift in Sources */,
 				0464A405284523C600618E21 /* CryptoRow.swift in Sources */,
 				04EDBC9828459B8800256C15 /* Wishlist.swift in Sources */,
+				042AA0A228475420005C9A2F /* ViewModel.swift in Sources */,
 				04EDBC9628459B7400256C15 /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
