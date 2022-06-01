@@ -16,13 +16,13 @@ struct CryptoRow: View {
             Text("Bitcoin")
 
             Spacer()
-        }
+        }.padding(.horizontal)
     }
 }
 
 struct CryptoRow_Previews: PreviewProvider {
     static var previews: some View {
         CryptoRow()
-            .previewLayout(.fixed(width: 300, height: 60))
+            .previewLayout(.fixed(width: 300, height: 50))
     }
 }

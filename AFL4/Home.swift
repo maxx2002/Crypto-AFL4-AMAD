@@ -9,16 +9,37 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("John Doe")
-            Text("Welcome back").foregroundColor(.gray)
-            
-            NavigationView{
-                List {
+        NavigationView{
+            VStack(alignment: .leading) {
+                HStack(alignment: .top) {
+                    VStack(alignment: .leading) {
+                        Text("John Doe")
+                        Text("Welcome back").foregroundColor(.gray)
+                    }.padding(.horizontal)
+                    Spacer()
+                }
+                
+                HStack{
+                    Text("My Favorite Crypto")
+                    Spacer()
+                    Button("View all"){
+                        
+                    }
+                }.padding()
+                
+                ScrollView{
+                    HStack{
+                        
+                    }
                     
                 }
-                .navigationTitle("My Favorite Crypto")
+                List{
+                    
+                }
+                
+                
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
