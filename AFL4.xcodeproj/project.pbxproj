@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		042AA09F28474721005C9A2F /* MyFavoriteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AA09E28474721005C9A2F /* MyFavoriteCard.swift */; };
-		042AA0A228475420005C9A2F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AA0A128475420005C9A2F /* ViewModel.swift */; };
 		0464A4032845204700618E21 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464A4022845204700618E21 /* Home.swift */; };
 		0464A405284523C600618E21 /* CryptoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0464A404284523C600618E21 /* CryptoRow.swift */; };
+		04A4018A2849B62A00DBC45E /* CoinDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A401892849B62A00DBC45E /* CoinDetail.swift */; };
+		04A4018C2849B88100DBC45E /* AddWishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4018B2849B88100DBC45E /* AddWishlist.swift */; };
+		04C04F1D284B53C300359E4E /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04F1C284B53C300359E4E /* CoinModel.swift */; };
+		04C04F20284B60D100359E4E /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04F1F284B60D100359E4E /* PreviewProvider.swift */; };
+		04C04F22284B83CA00359E4E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C04F21284B83CA00359E4E /* Double.swift */; };
 		04DE78B4283C6B3B0077BEE3 /* AFL4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */; };
 		04DE78B6283C6B3B0077BEE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE78B5283C6B3B0077BEE3 /* ContentView.swift */; };
 		04DE78B8283C6B3C0077BEE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DE78B7283C6B3C0077BEE3 /* Assets.xcassets */; };
@@ -41,9 +45,13 @@
 
 /* Begin PBXFileReference section */
 		042AA09E28474721005C9A2F /* MyFavoriteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteCard.swift; sourceTree = "<group>"; };
-		042AA0A128475420005C9A2F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0464A4022845204700618E21 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		0464A404284523C600618E21 /* CryptoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRow.swift; sourceTree = "<group>"; };
+		04A401892849B62A00DBC45E /* CoinDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetail.swift; sourceTree = "<group>"; };
+		04A4018B2849B88100DBC45E /* AddWishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWishlist.swift; sourceTree = "<group>"; };
+		04C04F1C284B53C300359E4E /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		04C04F1F284B60D100359E4E /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		04C04F21284B83CA00359E4E /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		04DE78B0283C6B3B0077BEE3 /* AFL4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFL4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFL4App.swift; sourceTree = "<group>"; };
 		04DE78B5283C6B3B0077BEE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,7 +94,7 @@
 		042AA0A028475401005C9A2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				042AA0A128475420005C9A2F /* ViewModel.swift */,
+				04C04F1C284B53C300359E4E /* CoinModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,8 +107,19 @@
 				04EDBC9528459B7400256C15 /* Market.swift */,
 				04EDBC9728459B8800256C15 /* Wishlist.swift */,
 				042AA09E28474721005C9A2F /* MyFavoriteCard.swift */,
+				04A401892849B62A00DBC45E /* CoinDetail.swift */,
+				04A4018B2849B88100DBC45E /* AddWishlist.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		04C04F1E284B60B900359E4E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04C04F1F284B60D100359E4E /* PreviewProvider.swift */,
+				04C04F21284B83CA00359E4E /* Double.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		04DE78A7283C6B3A0077BEE3 = {
@@ -126,6 +145,7 @@
 		04DE78B2283C6B3B0077BEE3 /* AFL4 */ = {
 			isa = PBXGroup;
 			children = (
+				04C04F1E284B60B900359E4E /* Helper */,
 				042AA0A028475401005C9A2F /* Model */,
 				0464A4012845201C00618E21 /* Views */,
 				04DE78B3283C6B3B0077BEE3 /* AFL4App.swift */,
@@ -292,12 +312,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DE78B6283C6B3B0077BEE3 /* ContentView.swift in Sources */,
+				04C04F20284B60D100359E4E /* PreviewProvider.swift in Sources */,
+				04A4018A2849B62A00DBC45E /* CoinDetail.swift in Sources */,
 				0464A4032845204700618E21 /* Home.swift in Sources */,
 				04DE78B4283C6B3B0077BEE3 /* AFL4App.swift in Sources */,
+				04C04F1D284B53C300359E4E /* CoinModel.swift in Sources */,
 				042AA09F28474721005C9A2F /* MyFavoriteCard.swift in Sources */,
 				0464A405284523C600618E21 /* CryptoRow.swift in Sources */,
+				04A4018C2849B88100DBC45E /* AddWishlist.swift in Sources */,
 				04EDBC9828459B8800256C15 /* Wishlist.swift in Sources */,
-				042AA0A228475420005C9A2F /* ViewModel.swift in Sources */,
+				04C04F22284B83CA00359E4E /* Double.swift in Sources */,
 				04EDBC9628459B7400256C15 /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

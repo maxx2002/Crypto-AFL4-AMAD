@@ -12,17 +12,17 @@ struct ContentView: View {
         TabView {
             Home()
                 .tabItem() {
-                    Image(systemName: "menucard")
+//                    Image(systemName: "menucard")
                     Text("Home")
-                }
+                };
             Market()
                 .tabItem() {
-                    Image(systemName: "chart.bar")
+//                    Image(systemName: "chart.bar")
                     Text("Market")
-                }
+                };
             Wishlist()
                 .tabItem() {
-                    Image(systemName: "heart.fill")
+//                    Image(systemName: "heart.fill")
                     Text("Wishlist")
                 }
         }
