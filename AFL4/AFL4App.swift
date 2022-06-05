@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AFL4App: App {
+    @StateObject private var vm = MarketViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(vm)
         }
     }
 }

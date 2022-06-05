@@ -1,27 +1,42 @@
-//
-//  Double.swift
-//  AFL4
-//
-//  Created by Macbook Pro on 04/06/22.
-//
-
 import Foundation
 
-extension Double {
-    private var currencyFormatter3: NumberFormatter {
+extension Double{
+    private var currencyFormatter2: NumberFormatter{
+        let formatter = NumberFormatter()
+        formatter.usesGroupingSeparator = true
+        formatter.numberStyle = .currency
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 2
+        return formatter
+    }
+    
+    func asCurrencyWith2Decimals() -> String{
+        let number = NSNumber(value: self)
+        return currencyFormatter2.string(from: number) ?? "$0.00"
+    }
+
+    private var currencyFormatter4: NumberFormatter{
         let formatter = NumberFormatter()
         formatter.usesGroupingSeparator = true
         formatter.numberStyle = .currency
 //        formatter.locale = .current
 //        formatter.currencyCode = "usd"
 //        formatter.currencySymbol = "$"
-        formatter.minimumFractionDigits = 1
-        formatter.maximumFractionDigits = 3
+        formatter.minimumFractionDigits = 2
+        formatter.maximumFractionDigits = 4
         return formatter
     }
     
-    func asCurrencyWith3Decimals() -> String {
+    func asCurrencyWith4Decimals() -> String{
         let number = NSNumber(value: self)
-        return currencyFormatter3.string(from: number) ?? "$0.00"
+        return currencyFormatter4.string(from: number) ?? "$0.00"
+    }
+
+    func asNumberString() -> String{
+        return String(format: "%.2f", self)
+    }
+    
+    func asPercentString() -> String{
+        return asNumberString()+"%"
     }
 }
