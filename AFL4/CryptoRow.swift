@@ -14,7 +14,7 @@ struct CryptoRow: View {
     
     var body: some View {
         HStack {
-            Circle()
+            CoinImageView(coin: coin)
                 .frame(width: 35, height: 35)
             VStack (alignment: .leading) {
                 Text(coin.name).font(.headline)
