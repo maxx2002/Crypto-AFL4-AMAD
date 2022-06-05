@@ -27,7 +27,7 @@ extension Market{
     private var allCoinList: some View{
         VStack{
             Text("Cryptocurrency List").font(.title).bold()
-            
+
             SearchBarView(searchText: $vm.searchText).padding()
             
             List{

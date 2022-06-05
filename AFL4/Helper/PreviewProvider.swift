@@ -20,6 +20,10 @@ class DeveloperPreview{
     
     let marketVM = MarketViewModel()
     
+    let state1 = StatisticModel(title: "Market Cap", value: "$13Bn", percentageChange: 21.5)
+    let state2 = StatisticModel(title: "Total Volume", value: "$1.2Tr", percentageChange: -1.4)
+    let state3 = StatisticModel(title: "Total Volume", value: "$1.2Tr", percentageChange: -1.4)
+    
     let coin = CoinModel(
         id  :   "bitcoin"  ,
         symbol  :   "btc"  ,

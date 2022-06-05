@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Home: View {
+    
+    @EnvironmentObject private var vm: MarketViewModel
+    
     var body: some View {
         NavigationView{
             VStack(alignment: .leading) {
@@ -18,6 +21,8 @@ struct Home: View {
                     }.padding(.horizontal)
                     Spacer()
                 }
+                
+//               HomeStatView
                 
                 HStack{
                     Text("My Favorite Crypto")
