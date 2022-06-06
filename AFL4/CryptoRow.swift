@@ -23,13 +23,6 @@ struct CryptoRow: View {
             
             Spacer()
             
-            if showHoldingsColumn{
-                VStack(alignment: .trailing) {
-                    Text(coin.currentHoldingsValue.asCurrencyWith4Decimals()).bold()
-                    Text((coin.currentHoldings ?? 0).asNumberString())
-                }
-            }
-            
             VStack (alignment: .trailing) {
                 Text("\(coin.currentPrice.asCurrencyWith4Decimals())")
                 Text("\(coin.priceChangePercentage24H?.asPercentString() ?? "")")

@@ -22,10 +22,12 @@ struct DetailLoadingView: View {
 }
 
 struct CoinDetail: View {
-    
-    
-    
+
     @StateObject private var vm: DetailViewModel
+    
+    @State private var selectedCoin: CoinModel? = nil
+    @State private var showDetailedView: Bool = false
+    
     private let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
@@ -92,14 +94,24 @@ struct CoinDetail: View {
                 }
                 
             }
-            
-            Button("Add to Wishlist"){
-                
+            NavigationLink{
+                AddWishlist()
+            } label:{
+                HStack {
+                    Spacer()
+                    Text("Add To Wishlist")
+                    Spacer()
+                }
                 
             }.padding()
+//            Button(action: { AddWishlist() }, label: {
+//                Text("Add To Wishlist")
+//            })
+//            .background(
+//                NavigationLink(destination: AddWishlist(), isActive: $showDetailedView, label: {EmptyView()})
+//            )
+//            .padding()
         }
-        
-        
     }
 }
 

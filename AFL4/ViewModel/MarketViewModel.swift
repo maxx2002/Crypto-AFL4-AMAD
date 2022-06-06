@@ -7,7 +7,7 @@ class MarketViewModel: ObservableObject{
     @Published var statistics: [StatisticModel] = []
     
     @Published var allCoins: [CoinModel] = []
-    @Published var wishListCoins: [CoinModel] = []
+    @Published var wishlistCoins: [CoinModel] = []
     
     @Published var searchText: String = ""
     
@@ -69,5 +69,5 @@ class MarketViewModel: ObservableObject{
             coin.symbol.lowercased().contains(lowercasedText)
         }
     }
-    
+
 }

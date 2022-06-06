@@ -11,14 +11,22 @@ struct Wishlist: View {
     var body: some View {
         NavigationView{
             VStack(alignment: .leading) {
-                HStack(alignment: .top) {
-                    Text("My Wishlist")
-                }
                 List{
-                    
-                }
+                    HStack {
+                        Image("bitcoin").resizable().frame(width: 40, height: 40)
+                        VStack (alignment: .leading) {
+                            Text("Bitcoin").font(.headline)
+                            Text("BTC").font(.caption).foregroundColor(.gray)
+                        }
+                        Spacer()
+                        VStack (alignment: .trailing) {
+                            Text("$29578").font(.headline)
+                            Text("amount: 1.2").font(.caption).foregroundColor(.gray)
+                        }
+                    }
+                }.listStyle(PlainListStyle()).padding(.vertical)
             }
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("My Wishlist")
         }
     }
 }
