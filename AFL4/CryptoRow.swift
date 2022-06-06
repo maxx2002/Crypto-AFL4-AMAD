@@ -41,13 +41,15 @@ struct CryptoRow: View {
                     )
             }
             
-        }.padding(.horizontal)
+        }
+        .padding(.horizontal)
+        .background(.gray.opacity(0.001))
     }
 }
 
 struct CryptoRow_Previews: PreviewProvider {
     static var previews: some View {
         CryptoRow(coin: dev.coin, showHoldingsColumn: true)
-            .previewLayout(.fixed(width: 300, height: 60))
+            .previewLayout(.sizeThatFits)
     }
 }

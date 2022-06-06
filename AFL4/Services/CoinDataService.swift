@@ -1,8 +1,9 @@
 import Foundation
 import Combine
 
-class CoinDataService{
+class CoinDataService: ObservableObject{
     @Published var allCoins: [CoinModel] = []
+    @Published var wishlists: [String] = []
     
     var coinSubscription: AnyCancellable?
     

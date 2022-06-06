@@ -10,10 +10,22 @@ import SwiftUI
 struct Market: View {
     @EnvironmentObject private var vm: MarketViewModel
     
+    @State private var selectedCoin: CoinModel? = nil
+    @State private var showDetailView: Bool = false
+    
     var body: some View {
-        allCoinList
         
+        NavigationView {
+            ZStack {
+                allCoinList
+            }
+            .background(NavigationLink(destination: DetailLoadingView(coin: $selectedCoin), isActive: $showDetailView, label: { EmptyView() })
+            )
+            .listStyle(PlainListStyle())
+            .navigationBarHidden(true)
+        }
     }
+    
 }
 
 struct Market_Previews: PreviewProvider {
@@ -25,18 +37,29 @@ struct Market_Previews: PreviewProvider {
 
 extension Market{
     private var allCoinList: some View{
-        VStack{
-            Text("Cryptocurrency List").font(.title).bold()
+            VStack{
+                Text("Cryptocurrency List").font(.title).bold()
 
-            SearchBarView(searchText: $vm.searchText).padding()
-            
-            List{
-                ForEach(vm.allCoins){coin in
-                    CryptoRow(coin: coin, showHoldingsColumn: false)
-                        .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                SearchBarView(searchText: $vm.searchText).padding()
+                
+                List{
+                    ForEach(vm.allCoins){coin in
+                        CryptoRow(coin: coin, showHoldingsColumn: false)
+                                        .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                                        .onTapGesture {
+                                            segue(coin: coin)
+                                        }
+                    }
                 }
+                
             }
-            .listStyle(PlainListStyle())
-        }
+        
+    }
+    
+    private func segue(coin: CoinModel) {
+        selectedCoin = coin
+        showDetailView.toggle()
     }
 }
+
+
